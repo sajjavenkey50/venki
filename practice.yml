@@ -1,6 +1,6 @@
 ---
 - name: setup web server
-  hosts: ec2-13-126-21-229.ap-south-1.compute.amazonaws.com
+  hosts: eec2-13-127-198-57.ap-south-1.compute.amazonaws.com
   become: yes
   tasks:
     - name: installing apache httpd service
