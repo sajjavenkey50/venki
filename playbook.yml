@@ -1,0 +1,14 @@
+---
+  - hosts: all
+
+    tasks:
+      - name: excuting EMSfile
+        copy: 
+          src: TIB_ems_8.4.0_win_x86_64.zip
+          dest: /home/ubuntu/TIB_ems_8.4.0_win_x86_64.zip
+        ignore_errors: yes
+        register: result
+      - debug:
+          var: result
+      - debug:
+          msg: EMS installed successfully
